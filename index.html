@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B11-Assignment-003</title>
+    <!-- Add Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- DaisyUI + TailwindCSS CDN --> 
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fontawesome CDN -->
+    <script src="https://kit.fontawesome.com/0b542f82b5.js" crossorigin="anonymous"></script>
+    <style>
+        .font-sora{
+            font-family: "Sora", serif;
+        }
+    </style>
+    <!-- Java script -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'btn-primary': '#179800',
+                'banner-primary': 'rgba(255,255,255,0.1)',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="">
+    <!-- Header Section -->
+     <header class="md:container md:mx-auto bg-red-50">
+        <!-- navbar -->
+        <nav>
+            <div class="navbar">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>   
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a>Product</a></li>
+                      <li>
+                        <a>Services</a>
+                      </li>
+                      <li><a>Contact us</a></li>
+                    </ul>
+                  </div>
+                  <a class=" lg:text-xl">
+                    <img src="./c2-assets/logo-header.png" alt="">
+                  </a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Product</a></li>
+                    <li>
+                     <a >Services</a>
+                    </li>
+                    <li><a>Contact us</a></li>
+                  </ul>
+                </div>
+                <div class="space-x-2 navbar-end">
+                    <i class="fa-solid w-7 fa-magnifying-glass"></i>
+                    <i class="fa-solid w-7 fa-cart-shopping"></i>
+                    <div class="">
+                        <a class="btn border border-btn-primary">Login</a>
+                      </div>
+                    <div class="">
+                      <a class="btn bg-btn-primary text-white">Register</a>
+                    </div>
+                </div>
+              </div>
+        </nav>
+        <!-- Banner Section -->
+        <section class="my-7">
+          <div class="hero">
+            <div class="hero-content text-center">
+              <div class="max-w-lg">
+                <h1 class="text-3xl font-semibold">Freshness <span class="text-btn-primary">You Can</span> <br>
+                  <span class="text-btn-primary">Count</span> On, Prices You’ll Love!</h1>
+                <p class="py-6 text-xl">
+                  Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!
+                </p>
+                <img class="w-full" src="./c2-assets/hero-vegetables.png" alt="">
+              </div>
+            </div>
+          </div>
+        </section>
+     </header>
+     <!-- Main Section -->
+     <main class="md:container md:mx-auto ">
+      <!-- Services section -->
+      <section class="my-24 lg:px-32">
+        <h3 class="text-4xl font-semibold  mb-12 text-btn-primary">Services</h3>
+        <!-- Cards -->
+         <div class="grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+           <!-- Card-1 -->
+           <div class="card card-compact bg-red-50 shadow-xl">
+            <figure class="pt-6">
+              <img class="bg-white p-6 rounded-full"
+                src="./c2-assets/service.png"
+                alt="" />
+            </figure>
+            <div class="card-body space-y-3 ">
+              <h2 class="text-2xl font-semibold text-center">24/7 Services </h2>
+              <p class="text-center">24/7 services are services that are available 24 hours a day, 7 days a week. This term is often used in commerce and industry. </p>
+            </div>
+          </div>
+          <!-- Card-2 -->
+           <div class="card card-compact bg-red-50 shadow-xl">
+            <figure class="pt-6">
+              <img class="bg-white p-6 rounded-full"
+                src="./c2-assets/delivery.png"
+                alt="" />
+            </figure>
+            <div class="card-body space-y-3 ">
+              <h2 class="text-2xl font-semibold text-center">Fast Delivery </h2>
+              <p class="text-center">The fastest overnight delivery option is Nature Platter. You can expect your package or envelope to be delivered by 8 a.m. the next business day in most areas.
+              </p>
+            </div>
+          </div>
+          <!-- Card-3 -->
+           <div class="card card-compact bg-red-50 shadow-xl">
+            <figure class="pt-6">
+              <img class="bg-white p-6 rounded-full"
+                src="./c2-assets/healthy.png"
+                alt="" />
+            </figure>
+            <div class="card-body space-y-3 ">
+              <h2 class="text-2xl font-semibold text-center">Healthy Products </h2>
+              <p class="text-center">Eating a wide variety of nutritious foods, including fruit, vegetables, nuts, seeds, and lean protein can help support your overall health.</p>
+            </div>
+          </div>
+         </div>
+      </section>
+      <!--  Products section-->
+      <section class="my-24 lg:px-32">
+        <h3 class="text-4xl font-semibold  mb-12 text-btn-primary">Popular Products</h3>
+        <div>
+          <!-- Products image Card -->
+          <div>
+
+          </div>
+          <div>
+
+          </div>
+        </div>
+
+      </section>  
+      <!-- Arrival & Offers section -->
+     </main>
+      <!-- Footer Section -->
+     <footer>
+
+     </footer>
+</body>
+</html>
