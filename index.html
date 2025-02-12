@@ -17,6 +17,10 @@
         .font-sora{
             font-family: "Sora", serif;
         }
+        .product-image{
+          display: grid;
+          justify-content: end;
+        }
     </style>
     <!-- Java script -->
     <script>
@@ -107,9 +111,9 @@
         </section>
      </header>
      <!-- Main Section -->
-     <main class="md:container md:mx-auto lg:px-28">
+     <main class="">
       <!-- Services section -->
-      <section class="my-24">
+      <section class="my-24 md:container md:mx-auto">
         <h3 class="text-4xl font-semibold  mb-12 text-btn-primary">Services</h3>
         <!-- Cards -->
          <div class="grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
@@ -153,16 +157,146 @@
          </div>
       </section>
       <!--  Products section-->
-      <section class="my-24">
-        <h3 class="text-4xl font-semibold  mb-12 text-btn-primary">Popular Products</h3>
-        <div>
-          <!-- Products image Card -->
-          <div>
+      <section class="my-24 bg-red-50 ">
+        <div class="md:container md:mx-auto ">
+          <h3 class="my-24 text-4xl font-semibold text-btn-primary">Popular Products</h3>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-x-5">
+          <!-- Products Card-1 -->
+        <div class="bg-gradient-to-r from-btn-primary to-btn-primary-300 rounded-lg">
+          <!-- Text area -->
+         <div class="space-y-7 px-7 py-7">
+           <h3 class="text-white">30% off</h3>
+           <p class="">Discover a world of treats, toys, and essentials handpicked for </p>
+           <button class="py-2 px-5 bg-white rounded-md">Buy Now</button>
+         </div>
+         <div class="product-image">
+          <img class="w-full" src="./c2-assets/vegetable-offer.png" alt=""> 
+         </div>
+       </div>
+       <!-- product card-2 -->
+       <div>
+         <!-- Products grid card -->
+        <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+         <!-- grid card-1 -->
+         <div class="flex items-center  gap-4 bg-white rounded-lg">
+          <div class="bg-red-50 m-5"> <img class="rounded-3xl" src="./c2-assets/onion.png" alt="">
+         </div>
+           <!-- text area -->
+            <div>
+             <div class="rating space-x-2"><input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /><span >4.5</span></div>
+             <p>Onion 1 KG</p>
+             <p>$39.99</p>
+             <p></p>
+            </div>
 
-          </div>
-          <div>
+         </div>
+         <!-- grid card-2 -->
+         <div class="flex items-center  gap-4 bg-white rounded-lg">
+          <div class="bg-red-50 m-5"> <img class="rounded-3xl" src="./c2-assets/tomato.png" alt="">
+         </div>
+           <!-- text area -->
+            <div>
+             <div class="rating space-x-2"><input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /><span >4.5</span></div>
+             <p>Onion 1 KG</p>
+             <p>$39.99</p>
+             <p></p>
+            </div>
 
-          </div>
+         </div>
+         <!-- grid card-3 -->
+         <div class="flex items-center  gap-4 bg-white rounded-lg">
+          <div class="bg-red-50 m-5"> <img class="rounded-3xl" src="./c2-assets/potato.png" alt="">
+         </div>
+           <!-- text area -->
+            <div>
+             <div class="rating space-x-2"><input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /><span >4.5</span></div>
+             <p>Onion 1 KG</p>
+             <p>$39.99</p>
+             <p></p>
+            </div>
+
+         </div>
+         <!-- grid card-4 -->
+         <div class="flex items-center  gap-4 bg-white rounded-lg">
+          <div class="bg-red-50 m-5"> <img class="rounded-3xl" src="./c2-assets/tomato.png" alt="">
+         </div>
+           <!-- text area -->
+            <div>
+             <div class="rating space-x-2"><input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /><span >4.5</span></div>
+             <p>Onion 1 KG</p>
+             <p>$39.99</p>
+             <p></p>
+            </div>
+
+         </div>
+         <!-- grid card-5 -->
+         <div class="flex items-center  gap-4 bg-white rounded-lg">
+          <div class="bg-red-50 m-5"> <img class="rounded-3xl" src="./c2-assets/onion.png" alt="">
+         </div>
+           <!-- text area -->
+            <div>
+             <div class="rating space-x-2"><input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /><span >4.5</span></div>
+             <p>Onion 1 KG</p>
+             <p>$39.99</p>
+             <p></p>
+            </div>
+
+         </div>
+         <!-- grid card-6 -->
+         <div class="flex items-center  gap-4 bg-white rounded-lg">
+          <div class="bg-red-50 m-5"> <img class="rounded-3xl" src="./c2-assets/tomato.png" alt="">
+         </div>
+           <!-- text area -->
+            <div>
+             <div class="rating space-x-2"><input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /><span >4.5</span></div>
+             <p>Onion 1 KG</p>
+             <p>$39.99</p>
+             <p></p>
+            </div>
+
+         </div>
+         <!-- grid card-7 -->
+         <div class="flex items-center  gap-4 bg-white rounded-lg">
+          <div class="bg-red-50 m-5"> <img class="rounded-3xl" src="./c2-assets/onion.png" alt="">
+         </div>
+           <!-- text area -->
+            <div>
+             <div class="rating space-x-2"><input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /><span >4.5</span></div>
+             <p>Onion 1 KG</p>
+             <p>$39.99</p>
+             <p></p>
+            </div>
+
+         </div>
+         <!-- grid card-8 -->
+         <div class="flex items-center  gap-4 bg-white rounded-lg">
+          <div class="bg-red-50 m-5"> <img class="rounded-3xl" src="./c2-assets/potato.png" alt="">
+         </div>
+           <!-- text area -->
+            <div>
+             <div class="rating space-x-2"><input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /><span >4.5</span></div>
+             <p>Onion 1 KG</p>
+             <p>$39.99</p>
+             <p></p>
+            </div>
+
+         </div>
+         <!-- grid card-9 -->
+         <div class="flex items-center  gap-4 bg-white rounded-lg">
+          <div class="bg-red-50 m-5"> <img class="rounded-3xl" src="./c2-assets/potato.png" alt="">
+         </div>
+           <!-- text area -->
+            <div>
+             <div class="rating space-x-2"><input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" /><span >4.5</span></div>
+             <p>Onion 1 KG</p>
+             <p>$39.99</p>
+             <p></p>
+            </div>
+
+         </div>
+        </div>
+       </div>
+        </div>
         </div>
 
       </section>  
