@@ -30,6 +30,10 @@
               colors: {
                 clifford: '#da373d',
                 'btn-primary': '#179800',
+                'arival-primary': '#115414',
+                'arival-btn-primary': '#63B76D',
+                'offer-primary': '#102861',
+                'offer-btn-primary': '#2A4D97',
                 'banner-primary': 'rgba(255,255,255,0.1)',
               }
             }
@@ -37,11 +41,11 @@
         }
       </script>
 </head>
-<body class="">
+<body class="font-sora ">
     <!-- Header Section -->
-     <header class="md:container md:mx-auto bg-red-50">
+     <header class="bg-red-50">
         <!-- navbar -->
-        <nav>
+        <nav class="md:container md:mx-auto">
             <div class="navbar">
                 <div class="navbar-start">
                   <div class="dropdown">
@@ -157,16 +161,16 @@
          </div>
       </section>
       <!--  Products section-->
-      <section class="my-24 bg-red-50 ">
-        <div class="md:container md:mx-auto ">
-          <h3 class="my-24 text-4xl font-semibold text-btn-primary">Popular Products</h3>
+      <section class="bg-red-50 ">
+        <div class=" my-24 md:container md:mx-auto ">
+          <h3 class="text-4xl font-semibold text-btn-primary">Popular Products</h3>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-x-5">
           <!-- Products Card-1 -->
         <div class="bg-gradient-to-r from-btn-primary to-btn-primary-300 rounded-lg">
           <!-- Text area -->
          <div class="space-y-7 px-7 py-7">
            <h3 class="text-white">30% off</h3>
-           <p class="">Discover a world of treats, toys, and essentials handpicked for </p>
+           <p class="">Discover a world of treats, toys, <br> and essentials handpicked for </p>
            <button class="py-2 px-5 bg-white rounded-md">Buy Now</button>
          </div>
          <div class="product-image">
@@ -301,12 +305,43 @@
 
       </section>  
       <!-- Arrival & Offers section -->
-       <section>
+      <section class="my-24 md:container mx-auto">
         <h3 class="text-4xl font-semibold  mb-12 text-btn-primary">Arrival & Offers</h3>
-       </section>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+          <div class="lg:col-span-2 bg-arival-primary rounded-lg">
+            <!-- Text area -->
+             <div class="flex justify-between items-center">
+              <div class="flex flex-col  items-center  text-white space-y-7 py-5">
+                <img class="w-fit" src="./c2-assets/dawat-logo.png" alt="">
+                <button class="text-white bg-arival-btn-primary px-3 py-2 rounded-lg">Cook Exotic Dishes</button>
+                <h3 class="text-2xl font-bold">UP to 20% OFF</h3>
+               </div>
+               <!-- image area -->
+               <div class="pt-8">
+                <img src="./c2-assets/dawat-mock-up.png" alt="">
+               </div>
+             </div>
+          </div>
+          <div class="bg-offer-primary rounded-lg">
+            <!-- Text area -->
+            <div class="flex justify-around items-center">
+             <div class="flex flex-col  items-center  text-white space-y-7 py-5">
+               <img class="w-fit" src="./c2-assets/india-gate-logo.png" alt="">
+               <button class="text-white bg-offer-btn-primary px-3 py-2 rounded-lg">Cook Exotic Dishes</button>
+               <h3 class="text-2xl font-bold">UP to 20% OFF</h3>
+              </div>
+              <!-- image area -->
+              <div class="pt-8">
+               <img src="./c2-assets/india-gate-mock-up.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
      </main>
       <!-- Footer Section -->
-      <footer class="md:container md:mx-auto bg-btn-primary text-white font-normal py-32  lg:px-28">
+      <footer class="bg-btn-primary text-white font-normal py-32  lg:px-28">
           <!-- Logo -->
            <!-- Links  -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-28 ">
